@@ -40,7 +40,7 @@ jobs:
         run: pnpm install
 
       - name: 7.Run build task
-        run: npm run build --if-present
+        run: pnpm run build
 
       - name: 8.Deploy to Server
         uses: easingthemes/ssh-deploy@main
